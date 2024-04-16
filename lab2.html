@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header>Ethan Co.</header>
+    <meta charset="utf-8" />
+    <link rel="icon" href="monkey.png">
+    <title>Ethan Lee Meeting</title>
+</head>
+<body>
+    <h1>
+        Documentation
+    </h1>
+
+    <h2>
+        Sunday, April 14
+    </h2>
+    <main>
+        
+        <nav><a href="/this/">This</a> |
+            <a href="/doesnt/">Doesn't</a> |
+            <a href="/go/">Go</a> |
+            <a href="/anywhere/">Anywhere</a>
+        </nav>
+        <h4>Attendance</h4>
+        <ul>
+            <li><input type="checkbox" /> Ethan </li>
+            <li><input type="checkbox" /> Person 2</li>
+            <li><input type="checkbox" /> Person 3</li>
+            <li><input type="checkbox" /> Person 4</li>
+        </ul>
+        
+
+        <div>
+            <h3>Agenda</h3> 
+            <p>The meeting will be about <span style="color:red">Ethan Lee</span> a student in CSE 110.</p>
+            <p>We will go over the following:</p>
+            <ol>
+                <li>Ethan's <i>Major</i></li>
+                <li>Ethan's <i>Hobbies</i></li>
+                <li>Ethan's <i>Role</i> in CSE 110</li>
+                <li>
+                    <details>
+                        <summary>Ethan's Work Habits</summary>
+                        <p> Good and Bad (e.g procrastination, planning ahead...)</p>
+                    </details>
+                </li>
+              </ol>
+            
+        </div>
+        
+
+        <section>
+            <h3>Last Time We...</h3>
+            <p>Went over the <b>CSE 110</b> class and what we will be learning over the course of 11 weeks. <br> We also talked about the importance of staying on track:</p>
+            <p>
+                It is <strong>important</strong> to not <em>procrastinate</em> in CSE 110.
+            </p>
+            <hr>
+
+        </section>
+        
+        <h4>Comments, Concerns, Questions?</h4>
+        <form onsubmit="alert('Recieved')">
+            <textarea id="w3review" name="w3review" rows="4" cols="50">Type your Comments, Questions, and/or Concerns here.</textarea>
+            <br>
+            <button>Submit</button>
+        </form>
+
+        <h4>HTML Diagram</h4>
+        <img src="https://www.researchgate.net/publication/261313983/figure/fig4/AS:668695076560905@1536440738478/HTML-document-tree-representation.png" alt="HTML Diagram" width = 600>
+        <h3>Video:</h3>
+        <video src="ethan.mp4" controls></video>
+        <h3>Audio:</h3>
+        <audio controls src="ethan.mp3"></audio>
+
+
+        <h3>Sign up for our next meeting:</h3>
+        <fieldset>
+            <legend>Sign up:</legend>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname"><br><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+    
+            Select Time:
+            <input type="radio" name="5:00pm" id="5:00pm" value = "5:00pm" ><label for="5:00pm">5:00pm</label>
+            <input type="radio" name="5:00pm" id="5:00pm" value = "5:00pm" ><label for="5:00pm">6:00pm</label>
+            <input type="radio" name="5:00pm" id="5:00pm" value = "5:00pm" ><label for="5:00pm">7:00pm</label>
+            <br><br>
+            
+            Select Remote or In-person:
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Remote">
+                <option value="In-Person">
+                
+            </datalist>
+            <br><br>
+            Choose Branch:
+            <select name="cars" id="cars">
+                <option value="branch1">Branch 1</option>
+                <option value="branch2">Branch 2</option>
+                <option value="branch3">Branch 3</option>
+
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </main>
+    <footer>
+        <a href="https://github.com/ethanlee7102"> Ethan's Github</a>
+        <br>
+        e1lee@ucsd.edu
+    </footer>
+</body>
+</html>
