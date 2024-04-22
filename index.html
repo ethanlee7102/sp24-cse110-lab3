@@ -5,17 +5,28 @@
     <meta charset="UTF-8">
     <meta name="description" content="Ethan!">
     <link rel="icon" href="monkey.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h4{
+            color: maroon;
+        }
+    </style>
 </head>
 
 <body>
     <header>Ethan Co.</header>
-    <h1>
+    <div id = "top">
+    <h1 id = "titlehead">
         Documentation
     </h1>
 
     <h2>
         Sunday, April 14
     </h2>
+    </div>
     <main>
         
         <nav><a href="/this/">This</a> |
@@ -24,8 +35,8 @@
             <a href="/anywhere/">Anywhere</a>
         </nav>
         <h4>Attendance</h4>
-        <ul>
-            <li><input type="checkbox" > Ethan </li>
+        <ul id = "checklist">
+            <li class = "Ethan"><input type="checkbox" > Ethan </li>
             <li><input type="checkbox" > Person 2</li>
             <li><input type="checkbox" > Person 3</li>
             <li><input type="checkbox" > Person 4</li>
@@ -33,10 +44,10 @@
         
 
         <div>
-            <h3>Agenda</h3> 
-            <p>The meeting will be about <span style="color:red">Ethan Lee</span> a student in CSE 110.</p>
+            <h3 class = "header3 header3-1">Agenda</h3> 
+            <p id = "agenda">The meeting will be about <span style="color:red">Ethan Lee</span> a student in CSE 110.</p>
             <p>We will go over the following:</p>
-            <ol>
+            <ol id = "goover">
                 <li>Ethan's <i>Major</i></li>
                 <li>Ethan's <i>Hobbies</i></li>
                 <li>Ethan's <i>Role</i> in CSE 110</li>
@@ -52,8 +63,8 @@
         
 
         <section>
-            <h3>Last Time We...</h3>
-            <p>Went over the <b>CSE 110</b> class and what we will be learning over the course of 11 weeks. <br> We also talked about the importance of staying on track:</p>
+            <h3 class = "header3 header3-2">Last Time We...</h3>
+            <p id = "underlined" >Went over the <b>CSE 110</b> class and what we will be learning over the course of 11 weeks. <br> We also talked about the importance of staying on track:</p>
             <p>
                 It is <strong>important</strong> to not <em>procrastinate</em> in CSE 110.
             </p>
@@ -68,16 +79,16 @@
             <button>Submit</button>
         </form>
 
-        <h4>HTML Diagram</h4>
-        <img src="https://www.researchgate.net/publication/261313983/figure/fig4/AS:668695076560905@1536440738478/HTML-document-tree-representation.png" alt="HTML Diagram" width = 600>
-        <h3>Video:</h3>
-        <video src="ethan.mp4" controls></video>
-        <h3>Audio:</h3>
+        <h4 style="color:red;">HTML Diagram </h4>
+        <img id ="img" src="https://www.researchgate.net/publication/261313983/figure/fig4/AS:668695076560905@1536440738478/HTML-document-tree-representation.png" alt="HTML Diagram" width = 600>
+        <h3 class = "header3 header3-3">Video:</h3>
+        <video id ="vid" src="ethan.mp4" controls></video>
+        <h3 class = "header3 header3-4">Audio:</h3>
         <audio controls src="ethan.mp3"></audio>
 
 
-        <h3>Sign up for our next meeting:</h3>
-        <fieldset>
+        <h3 class = "header3 header3-5">Sign up for our next meeting:</h3>
+        <fieldset id = "field">
             <legend>Sign up:</legend>
             <label for="firstname">First name:</label>
             <input type="text" id="firstname" name="firstname"><br><br>
@@ -89,9 +100,11 @@
             <input type="date" id="birthday" name="birthday"><br><br>
     
             Select Time:
+            <div id = "selecttime">
             <input type="radio" name="5:00pm" id="5:00pm" value = "5:00pm" ><label for="5:00pm">5:00pm</label>
             <input type="radio" name="5:00pm" id="6:00pm" value = "6:00pm" ><label for="6:00pm">6:00pm</label>
             <input type="radio" name="5:00pm" id="7:00pm" value = "7:00pm" ><label for="7:00pm">7:00pm</label>
+            </div>
             <br><br>
             
             Select Remote or In-person:

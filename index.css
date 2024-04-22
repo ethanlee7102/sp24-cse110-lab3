@@ -1,0 +1,156 @@
+body {
+    background:
+        linear-gradient(
+            90deg,
+            lightblue,
+            #C298C2
+        )
+
+  }
+  header{
+    text-align: center;
+    position: sticky;
+    top: 10px;
+  }
+  *{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #top{ /* top block */
+    background: linear-gradient(90deg,#C298C2, lightblue);
+    margin-left: -0.2cm;
+    margin-right: -0.2cm;
+    padding-left: 0.2cm;
+    padding-top: 2mm;
+    padding-right: 5vw;
+    padding-bottom: 0.7vh;
+  }
+  #titlehead{ /* title */
+    font-family: "Jersey 10", sans-serif;
+    color: white;
+    background-color: black;
+    margin-left: -0.2cm;
+    margin-right: 10cm;
+    padding-left: 0.2cm;
+    padding-top: 2mm;
+    padding-right: 5vw;
+    padding-bottom: 0.7vh;
+    text-decoration: underline wavy;
+
+    position: relative;
+        top: 10px; left: 10px;
+    
+    }
+  
+
+  #checklist{
+    display: block;
+    max-width: 4cm;
+    max-height: 4cm;
+    
+  }
+
+  #goover{
+    display: inline-block;
+    height: 2.5cm;
+    width: 4cm;
+  }
+  
+  h2{
+    color: rgb(10, 100, 10);
+  }
+  h4, h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+  
+  #agenda{
+        margin: 10px;
+        padding: 10px
+  }
+  .header3{
+    color: black;
+  }
+    .header3-1{
+        color: #C718CA;
+        margin: auto;
+    }
+    .header3-2{
+        color : hsl(141, 58%, 50%);
+    }
+    .header3-3{
+        color : color(display-p3 1 0.5 0 / .5);
+    }
+    .header3-3{
+        color: red; /* fallback color */
+        color: color-mix(in lch, plum 40%, pink);
+    }
+
+    #underlined{
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 440px;
+        padding: 0px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: blue;
+        border-radius: 5px;
+        background-image: repeating-linear-gradient(
+        to top,
+        lightgreen 0 2px,
+        transparent 2px 1lh);
+        color: blue;
+    }
+
+    button:hover {
+        color: blue;
+      }
+    button:active{
+        color: red;
+    }
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: -5px;
+
+        & label{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    #selecttime{
+        display: grid;
+        grid-template-rows: [row1-start] 15px [row1-end] 15px [third-line] 15px [fourth-line] 15px [fifth-line] 15px [last-line] 15px;
+        row-gap: 5px;
+        align-items: start;
+    }
+    #vid{
+        width: 800px;
+    }
+
+    @media (max-width: 1200px) {
+        #vid{
+            width: 700px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        #vid{
+            width: 500px;
+        }
+        #img{
+            width: 500px;
+        }
+    }
+
+    h4:has(+ ul){
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    li[class = "Ethan"]{
+        color: blue;
+    }
+
+   
